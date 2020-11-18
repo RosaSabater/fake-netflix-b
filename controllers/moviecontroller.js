@@ -9,7 +9,7 @@ const showMovies = async (req, res) => {
         let limit = parseInt(query.limit);
 
         // el limit es el número que va al final de la url de PseudoPostman
-        // si no hay limit o el limite es mayor o igual a 30, se mantiene en 30
+        // si no hay limit o el limite es mayor o igual a 100, se mantiene en 100
         if (!limit || limit >= 100) {
             limit = 100
         };
